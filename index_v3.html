@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>I Halil Altun</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ihalilaltun, ibrahim halil altun">
+    <meta name="author" content="">
+    
+    
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+     <link href='/style.css' rel='stylesheet' type='text/css'>
+    <link rel='shortcut icon' type='image/x-icon' href='https://order.ihalilaltun.me/favicon.ico' />
+    
+    <link rel="manifest" href="/manifest.json">
+    <script src="segmentify-integration.js" charset="UTF-8"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="/segmentify.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/purecss@1.0.0/build/base-min.css,npm/purecss@1.0.0/build/grids-min.css,npm/purecss@1.0.0/build/grids-responsive-min.css">
+    <style>
+
+        body {
+            margin: 50px;
+            color: gray;
+            text-decoration: none;            
+        }
+
+        .rec-product > div {
+            padding: 30px;
+            background-color: blue;
+        }  
+        .rec-product > div {
+            margin: 30px;
+            background-color: white;
+            display: block;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }    
+        .product-images > img {
+            width: 50px;
+        }    
+        span.product-title {
+            font-size: 22px;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+        .old-price {
+            text-decoration: line-through;
+            opacity: 0.3;            
+        }
+        button {
+            display: block;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        span.event-name {
+            font-size: 18px;
+        }        
+        .event-name-title {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.6;     
+            margin-top: 30px;       
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="homepage">
+    <div class='fill-screen'><img class='make-it-fit' src='https://order.ihalilaltun.me/at.jpg'></div>
+        
+            <button id="subscribe" class="subscribe" type="button">Click Me!</button>
+
+            <script>
+        
+        var p = document.getElementById("subscribe");
+p.onclick = function() {
+    // Ensure that the user can receive Safari Push Notifications.
+    if ('safari' in window && 'pushNotification' in window.safari) {
+        var permissionData = window.safari.pushNotification.permission('web.com.segmentify.renklidolap.webpush');
+        checkRemotePermission(permissionData);
+    }
+};
+ 
+var checkRemotePermission = function (permissionData) {
+    if (permissionData.permission === 'default') {
+        // This is a new web service URL and its validity is unknown.
+        window.safari.pushNotification.requestPermission(
+            'https://dce-test.segmentify.com/safari/93a9a7c4-dc2e-49f7-832e-7c7fc3dabbf9', // The web service URL.
+            'web.com.segmentify.renklidolap.webpush',     // The Website Push ID.
+            {}, // Data that you choose to send to your server to help you identify the user.
+            checkRemotePermission         // The callback function.
+        );
+    }
+    else if (permissionData.permission === 'denied') {
+        console.log(permissionData);
+        // The user said no.
+    }
+    else if (permissionData.permission === 'granted') {
+        console.log(permissionData);
+        // The web service URL is a valid push provider, and the user said yes.
+        // permissionData.deviceToken is now available to use.
+    }
+};
+    </script>
+
+<div class="seg-product-container pure-g" style="margin-top: 50%;position: absolute;">
+
+    <div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
+           <div href="https://order.ihalilaltun.me/1-l-le-parfait-jar/" target="_self" title="1 L Le Parfait Jar - Üü Ğğ Çç Şş İi Iı Öö">
+               <span class="product-images"><img src="https://cdn11.bigcommerce.com/s-uqi8voq94p/images/stencil/500x659/products/93/313/leparfaitmedium1.1435948177.jpg?c=2" title="Orbit Terrarium - Small"></span>
+               <span class="product-title">1 L Le Parfait Jar - Üü Ğğ Çç Şş İi Iı Öö</span>            
+               <button onclick="window.location.href='https://order.ihalilaltun.me/tiered-wire-basket/'">Trigger</button>
+           </div>
+       </div>
+
+       <div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
+           <div href="https://order.ihalilaltun.me/able-brewing-system/" target="_self" title="Able Brewing System">
+               <span class="product-images"><img src="https://cdn11.bigcommerce.com/s-uqi8voq94p/images/stencil/500x659/products/86/286/ablebrewingsystem4.1435947369.jpg?c=2" title="Orbit Terrarium - Small"></span>
+               <span class="product-title">Able Brewing System</span>            
+               <button onclick="window.location.href='https://order.ihalilaltun.me/able-brewing-system/'">Trigger</button>
+           </div>
+       </div>
+
+       <div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
+           <div href="https://order.ihalilaltun.me/able-brewing-system/" target="_self" title="Canvas Laundry Cart">
+               <span class="product-images"><img src="https://cdn11.bigcommerce.com/s-uqi8voq94p/images/stencil/500x659/products/86/286/ablebrewingsystem4.1435947369.jpg?c=2" title="Orbit Terrarium - Small"></span>
+               <span class="product-title">Canvas Laundry Cart</span>            
+               <button onclick="window.location.href='https://order.ihalilaltun.me/able-brewing-system/'">Trigger</button>
+           </div>
+       </div>
+
+	<div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
+           <div href="https://order.ihalilaltun.me/orbit-terrarium-small/" target="_self" title="Orbit Terrarium - Small">
+               <span class="product-images"><img src="https://cdn11.bigcommerce.com/s-uqi8voq94p/images/stencil/500x659/products/98/327/CommonGoodLaundrySoap.1435948818.jpg?c=2" title="Orbit Terrarium - Small"></span>
+               <span class="product-title">Orbit Terrarium - Small</span>            
+               <button onclick="window.location.href='https://order.ihalilaltun.me/orbit-terrarium-small'">Trigger</button>
+           </div>
+       </div>
+
+       <div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
+           <div href="https://order.ihalilaltun.me/tiered-wire-basket/" target="_self" title="Tiered Wire Basket">
+               <span class="product-images"><img src="https://cdn11.bigcommerce.com/s-uqi8voq94p/images/stencil/500x659/products/97/325/tieredbasket.1435948588.jpg?c=2" title="Orbit Terrarium - Small"></span>
+               <span class="product-title">Tiered Wire Basket</span>            
+               <button onclick="window.location.href='https://order.ihalilaltun.me/tiered-wire-basket/'">Trigger</button>
+           </div>
+       </div>
+
+</div>
+</body>

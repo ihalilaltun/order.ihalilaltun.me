@@ -1,0 +1,1 @@
+importScripts('https://cdn.segmentify.com/v3/dev/sw.debug.js?v4');

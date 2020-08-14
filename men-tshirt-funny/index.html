@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>I Halil Altun</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ihalilaltun, ibrahim halil altun">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+    <link rel='shortcut icon' type='image/x-icon' href='https://order.ihalilaltun.me/favicon.ico' />
+    
+    <script src="/segmentify-integration.js" charset="UTF-8"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="/segmentify.css">
+
+</head>
+<body>
+    <div class='fill-screen' style="display: contents">
+        <div style="float: left; margin-bottom: 15px">
+            <button class="basket" id="addToBasket" title="Sepete Ekle"><span class="icon iconBasket"></span>Sepete Ekle</button>
+            <button class="basket" id="removeFromBasket" title="Sepete Ekle"><span class="icon iconBasket"></span>Sepetten Çıkar</button>
+        </div>
+        <div>
+            <img class='make-it-fit' src='https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/640w/products/2482/14045/Casual-t-shirt-men-car-drift-just-do-it-Print-tops-funny-Short-sleeve-t-shirt__40765.1514957380.jpg?c=2'>
+        </div>
+</div>
+
+<script type="text/javascript">
+    function waitSegmentifyAndjQuery() {
+        if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
+            window.segJquery = window["_SgmntfY_"]._getJq();
+
+            segJquery(document).ready(function() {
+                SegmentifyIntegration(window.segJquery).init();
+
+                window.segJquery("#addToBasket").click(function(){
+                    Segmentify('basket:add', {productId:"50000-2",quantity:1, price:56.75, nextPage:false});
+
+                });
+                window.segJquery("#removeFromBasket").click(function(){
+                    Segmentify('basket:remove', {productId:"50000-2", nextPage:false});
+
+                });
+
+            });
+        } else {
+            setTimeout(waitSegmentifyAndjQuery, 100);
+        }
+    }
+    waitSegmentifyAndjQuery();
+
+
+    Segmentify('view:page', {
+          'category': 'Product Page > Clothes'
+        });
+
+    Segmentify('view:product', {productId:"50000-2",title:"Men T-shirt Funny",url:"https://order.ihalilaltun.me/men-tshirt-funny/",image:"https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/640w/products/2482/14045/Casual-t-shirt-men-car-drift-just-do-it-Print-tops-funny-Short-sleeve-t-shirt__40765.1514957380.jpg?c=2",price:56.75,oldPrice:60.0,categories:["Shop", "Clothes"],inStock:true,brand:"OFS"});
+
+</script>
+</body>
